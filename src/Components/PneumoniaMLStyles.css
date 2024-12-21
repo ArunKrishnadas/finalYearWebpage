@@ -1,0 +1,67 @@
+.pneumonia-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.pneumonia-container h1 {
+    color: #005073;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-area {
+    margin-top: 20px;
+}
+
+.patient-details {
+    background-color: #e3f2fd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.upload-section label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.upload-section input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.2s;
+}
+
+.upload-section input:focus {
+    border-color: #009688;
+}
+
+.analyze-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.analyze-btn:hover {
+    background-color: #43a047;
+}
+
+.result-section {
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
