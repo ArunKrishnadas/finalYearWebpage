@@ -37,8 +37,23 @@ const Home = () => {
     },
   ];
 
-  const handleNavigation = () => {
-    navigate("/brain");
+  const handleNavigation = (name) => {
+    switch (name.toLowerCase()) {
+      case 'heart':
+      case 'brain':
+      case 'kidney':
+      case 'pneumonia':
+        navigate(`/qr/${name.toLowerCase()}`);
+        break;
+      case 'assistant':
+        navigate('/assistant');
+        break;
+      case 'gluco pro':
+        navigate('/gluco-pro');
+        break;
+      default:
+        break;
+    }
   };
 
   const renderOption = () => (
@@ -47,9 +62,9 @@ const Home = () => {
         <div
           className={styles.menuOption}
           key={option.id}
-          onClick={handleNavigation}
+          onClick={() => handleNavigation(option.name)}
         >
-          <img className={styles.icon} src={option.icon} />
+          <img className={styles.icon} src={option.icon} alt={option.name} />
           <span className={styles.menuTitle}>{option.name}</span>
         </div>
       ))}
