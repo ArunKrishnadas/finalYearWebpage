@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  overflow-y: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: grid;
+  row-gap: 50px;
+  column-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.menuOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.icon {
+  height: 100px;
+  width: 90px;
+  margin-bottom: 15px;
+}
+
+.menuTitle {
+  font-size: 25px;
+  color: #fff;
+}
